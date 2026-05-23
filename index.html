@@ -159,6 +159,14 @@ section{padding:80px 24px}
 footer{padding:40px 24px;border-top:1px solid var(--border);text-align:center;font-size:.8rem;color:var(--text3)}
 footer a{color:var(--orange)}
 
+/* PRIVACY */
+.privacy{background:rgba(255,255,255,.01);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.privacy-box{max-width:700px;margin:0 auto;text-align:center}
+.privacy-icon{width:72px;height:72px;border-radius:50%;background:rgba(0,200,83,.08);border:1px solid rgba(0,200,83,.2);display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 20px}
+.privacy-badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.p-badge{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:50px;background:rgba(255,255,255,.03);border:1px solid var(--border);font-size:.8rem;color:var(--text2);font-weight:500}
+.p-badge .p-dot{width:6px;height:6px;border-radius:50%;background:#00C853}
+
 /* ANIM CLASSES */
 [data-anim]{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.4,0,.2,1),transform .7s cubic-bezier(.4,0,.2,1)}
 [data-anim].show{opacity:1;transform:translateY(0)}
@@ -360,6 +368,21 @@ body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
         <p class="testi-text">"J'ai perdu 8kg en 3 mois. Le scanner et le suivi des macros m'ont rendu la nutrition tellement plus simple."</p>
         <div class="testi-author"><div class="testi-av">T</div><div class="testi-info"><div class="name">Thomas B.</div><div class="role">Développeur, 25 ans</div></div></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVACY -->
+<section class="privacy">
+  <div class="privacy-box">
+    <div class="privacy-icon" data-anim="scale">🔒</div>
+    <h2 class="heading" data-anim style="font-size:clamp(1.4rem,3vw,2rem)">Tes données restent sur ton téléphone.</h2>
+    <p class="subtext" data-anim style="margin:0 auto;text-align:center">Chez CaliBodi, on ne collecte pas tes photos, ton poids, ni tes informations personnelles. Tout est stocké localement sur ton appareil. On ne voit rien, on ne stocke rien, on ne revend rien. Jamais.</p>
+    <div class="privacy-badges" data-anim>
+      <span class="p-badge"><span class="p-dot"></span> Stockage local uniquement</span>
+      <span class="p-badge"><span class="p-dot"></span> Zéro collecte de données</span>
+      <span class="p-badge"><span class="p-dot"></span> Aucune revente</span>
+      <span class="p-badge"><span class="p-dot"></span> Photos jamais uploadées</span>
     </div>
   </div>
 </section>
