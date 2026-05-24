@@ -102,15 +102,6 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 
 /* Trust Badges */
 .trust-badges { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 24px; }
-.trust-badge { display: inline-flex; align-items: center; gap: 7px; padding: 8px 16px; border-radius: 50px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); font-size: 13px; color: #aaa; font-weight: 600; transition: all 0.3s; }
-.trust-badge:hover { border-color: rgba(255,107,53,0.2); background: rgba(255,107,53,0.04); color: #ccc; }
-
-/* Price argument */
-.price-argument { max-width: 600px; margin: 0 auto 40px; text-align: center; padding: 24px 28px; border-radius: 16px; background: linear-gradient(135deg, rgba(255,107,53,0.06), rgba(255,45,85,0.04)); border: 1px solid rgba(255,107,53,0.15); }
-.price-argument .price-daily { font-family: 'Outfit', sans-serif; font-size: clamp(32px, 5vw, 48px); font-weight: 900; background: linear-gradient(135deg, #FF6B35, #FF2D55); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.1; }
-.price-argument .price-context { font-size: 15px; color: #888; margin-top: 8px; line-height: 1.6; }
-.price-argument .price-compare { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
-.price-argument .price-vs { font-size: 12px; color: #555; padding: 6px 14px; border-radius: 50px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.04); }
 .privacy-box { max-width: 720px; margin: 0 auto; text-align: center; }
 .privacy-icon { width: 80px; height: 80px; border-radius: 50%; background: rgba(0,200,83,0.06); border: 1px solid rgba(0,200,83,0.15); display: flex; align-items: center; justify-content: center; font-size: 36px; margin: 0 auto 28px; }
 .privacy-text { font-size: 17px; color: #888; line-height: 1.7; max-width: 540px; margin: 0 auto 32px; }
@@ -181,9 +172,9 @@ footer { padding: 60px 0 40px; border-top: 1px solid rgba(255,255,255,0.05); }
       <a href="#features" class="btn-secondary">Découvrir →</a>
     </div>
     <div class="trust-badges">
-      <span class="trust-badge">🇫🇷 100% française</span>
-      <span class="trust-badge">🚫 Sans pub — même en gratuit</span>
-      <span class="trust-badge">🔒 Données privées</span>
+      <span style="background: rgba(0,212,255,0.08); border: 1px solid rgba(0,212,255,0.2); border-radius: 20px; padding: 7px 16px; font-size: 13px; font-weight: 700; color: #00D4FF;">📱 APP 100% Française</span>
+      <span style="background: rgba(0,255,135,0.08); border: 1px solid rgba(0,255,135,0.2); border-radius: 20px; padding: 7px 16px; font-size: 13px; font-weight: 700; color: #00FF87;">🚫 Sans pub — même en gratuit</span>
+      <span style="background: rgba(255,107,53,0.1); border: 1px solid rgba(255,107,53,0.25); border-radius: 20px; padding: 7px 16px; font-size: 13px; font-weight: 700; color: #FF6B35;">🔒 Données privées</span>
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
@@ -505,17 +496,7 @@ footer { padding: 60px 0 40px; border-top: 1px solid rgba(255,255,255,0.05); }
   <div class="container" style="text-align: center;">
     <p class="section-label">Tarifs</p>
     <h2 class="section-title">5€ peuvent<br><span class="gradient-text">changer ta vie.</span></h2>
-    <p class="section-subtitle" style="margin: 0 auto;">Avec CaliBodi, changer ta vie, c'est gratuit... <strong style="color:#fff;">Enfin presque 😉</strong></p>
-
-    <div class="price-argument">
-      <div class="price-daily">0,14€ par jour.</div>
-      <div class="price-context">C'est le prix pour avoir un coach perso, un nutritionniste et un suivi complet.<br>Moins cher qu'un café. Et ça change ta vie.</div>
-      <div class="price-compare">
-        <span class="price-vs">☕ Café = 1,50€/jour</span>
-        <span class="price-vs">🥐 Croissant = 1,20€/jour</span>
-        <span class="price-vs">💪 CaliBodi = 0,14€/jour</span>
-      </div>
-    </div>
+    <p class="section-subtitle" style="margin: 0 auto;">Avec CaliBodi, changer ta vie, c'est gratuit... <strong style="color:#fff;">Enfin presque — 0,14€/j 😉</strong></p>
 
     <div class="pricing-grid">
       <!-- Free -->
